@@ -1,6 +1,6 @@
 <section class="content-header">
   <h1>
-    Todos os Restaurantes
+    All the Heroes
   </h1>
 </section>
 
@@ -8,11 +8,9 @@
 <section class="content">
 
   <div class="row">
-    <div class="col-sm-6 col-xs-12">
-
-      <!-- /.info-box -->
+    <div *ngFor="let hero of heroes" class="col-sm-6 col-xs-12">
+      <GFT-hero [hero]="hero"></GFT-hero>
     </div>
-    <!-- /.col -->
   </div>
 
 </section>
