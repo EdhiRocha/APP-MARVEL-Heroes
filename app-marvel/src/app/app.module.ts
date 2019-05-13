@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { HeroesComponent } from './heroes/heroes.component';
-import { HeroComponent } from './heroes/hero/hero.component';
-import { HeroesService } from './heroes/heroes.service';
+import { CharactersComponent } from './characters/characters.component';
+import { CharacterComponent } from './characters/character/character.component';
+import { CharactersService } from './characters/characters.service';
+import { CharacterDetailComponent } from './character-detail/character-detail.component';
 
 @NgModule({
   declarations: [
@@ -17,15 +19,17 @@ import { HeroesService } from './heroes/heroes.service';
     HeaderComponent,
     HomeComponent,
     AboutComponent,
-    HeroesComponent,
-    HeroComponent
+    CharactersComponent,
+    CharacterComponent,
+    CharacterDetailComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [
-    HeroesService
+    CharactersService
   ],
   bootstrap: [AppComponent]
 })

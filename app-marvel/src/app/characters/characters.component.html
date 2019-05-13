@@ -1,0 +1,14 @@
+<section class="content-header">
+  <h1>
+    All the Characters
+  </h1>
+</section>
+<section class="content">
+  <div class="row">
+    <div *ngFor="let character of characters" class="col-sm-6 col-xs-12">
+      <GFT-character [character]="character"></GFT-character>
+    </div>
+  </div>
+</section>
+
+
