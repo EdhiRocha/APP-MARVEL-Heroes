@@ -1,4 +1,4 @@
-# Meat - Angular App Starter
+# MyHero - Angular App Starter
 
 ## 1. Passos para começar
 
